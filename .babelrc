@@ -10,8 +10,5 @@
   ],
   "plugins": [
     ["babel-plugin-styled-components", {"ssr": true}],
-    ["module-resolver", {
-      "root": ["./src"]
-    }]
   ]
 }

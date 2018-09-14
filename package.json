@@ -7,23 +7,27 @@
     "build": "parcel build index.js -d dist",
     "clean": "rimraf dist",
     "clean-production": "yarn run clean && yarn run production",
-    "lint": "eslint --project .",
-    "production": "echo \"Not implemented yet\" && exit 1",
-    "start": "parcel index.js",
+    "production": "cross-env NODE_ENV=production && yarn build",
+    "start": "cross-env NODE_ENV=development parcel src/entry/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "flow:check": "flow check"
+    "flow:check": "flow check",
+    "lint": "eslint --project ."
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.7.1",
+    "history": "^4.7.2",
     "node-sass": "^4.9.3",
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "react-router-dom": "^4.3.1",
+    "src": "^1.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
     "flow-bin": "^0.81.0"
   }
 }
