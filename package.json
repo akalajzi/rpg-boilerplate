@@ -1,0 +1,29 @@
+{
+  "name": "rpg-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build index.js -d dist",
+    "clean": "rimraf dist",
+    "clean-production": "yarn run clean && yarn run production",
+    "lint": "eslint --project .",
+    "production": "echo \"Not implemented yet\" && exit 1",
+    "start": "parcel index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flow:check": "flow check"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.7.1",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "flow-bin": "^0.81.0"
+  }
+}

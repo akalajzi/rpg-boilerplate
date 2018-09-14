@@ -1,0 +1,12 @@
+.atom
+.env
+
+node_modules
+dist
+lib-cov
+coverage
+
+# Logs
+logs
+*.log
+npm-debug.log*
