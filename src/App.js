@@ -1,14 +1,20 @@
 // @flow strict
-import React from "react"
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
+import defaultTheme from 'themes/default';
+import Routes from 'scenes/Routes';
+
+import './global.styles.scss';
 
 const App = () => {
-  return(
-    <BrowserRouter>
-      <div>asdf</div>
-    </BrowserRouter>
-  )
-}
+  return (
+    <React.Fragment>
+      <ThemeProvider theme={defaultTheme}>
+        <Routes />
+      </ThemeProvider>
+    </React.Fragment>
+  );
+};
 
-export default App
+export default App;
