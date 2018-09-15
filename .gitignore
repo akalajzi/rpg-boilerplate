@@ -6,7 +6,6 @@ dist
 lib-cov
 coverage
 .cache
-cache
 
 # Logs
 logs

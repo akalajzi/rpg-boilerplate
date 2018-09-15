@@ -2,7 +2,9 @@
 
 const theme = {
   colors: {
-    test: "#FFA500",
+    black: "#010101",
+    orange: "#FFA500",
+    white: "#FFF",
   }
 }
 

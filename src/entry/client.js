@@ -6,6 +6,9 @@ import ReactDOM from "react-dom";
 import App from "../App"
 
 const element = document.getElementById('main')
+if (!element) {
+  throw new Error("Main element is missing!"); //eslint-disable-line
+}
 
 // Render
 if (process.env.NODE_ENV === 'production') {
