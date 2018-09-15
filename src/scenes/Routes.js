@@ -11,6 +11,7 @@ const Routes = () => {
       <ErrorBoundary>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          {/* no match */}
           <Route component={BadUrlPage} />
         </Switch>
       </ErrorBoundary>

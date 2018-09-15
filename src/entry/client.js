@@ -11,17 +11,7 @@ if (!element) {
 }
 
 // Render
-if (process.env.NODE_ENV === 'production') {
-  // rehydrate the bundle marks
-  // rehydrateMarks().then(() => {
-  //   ReactDOM.hydrate(app, element);
-  // });
-  ReactDOM.hydrate(<App />, element);
-} else {
-  ReactDOM.render(<App />, element);
-}
-
-
+ReactDOM.render(<App />, element);
 
 // Hot Module Replacement
 if (module.hot) {

@@ -9,11 +9,9 @@ import './global.styles.scss';
 
 const App = () => {
   return (
-    <React.Fragment>
-      <ThemeProvider theme={defaultTheme}>
-        <Routes />
-      </ThemeProvider>
-    </React.Fragment>
+    <ThemeProvider theme={defaultTheme}>
+      <Routes />
+    </ThemeProvider>
   );
 };
 
