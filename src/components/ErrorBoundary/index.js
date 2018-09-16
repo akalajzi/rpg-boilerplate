@@ -17,13 +17,9 @@ type Props = {
 };
 
 class ErrorBoundary extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-
-    this.state = {
-      error: null,
-    };
-  }
+  state = {
+    error: null,
+  };
 
   // eventually log somewhere permanently
   logError = (error: Error, errorInfo: RenderErrorInfo) => {

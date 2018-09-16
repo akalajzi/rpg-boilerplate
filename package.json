@@ -13,7 +13,8 @@
     "production": "cross-env NODE_ENV=production && yarn build",
     "flow:check": "flow check",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-ci": "yarn flow:check && yarn lint && yarn test --coverage",
+    "test": "jest"
   },
   "dependencies": {
     "node-sass": "^4.9.3",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-styled-components": "^1.7.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -33,6 +35,9 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.2.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",
@@ -47,7 +52,13 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.81.0",
+    "jest": "^23.6.0",
+    "jest-environment-jsdom": "^23.4.0",
+    "jest-environment-jsdom-global": "^1.1.0",
+    "jest-styled-components": "^6.2.0",
     "prettier": "^1.14.2",
+    "raf": "^3.4.0",
+    "react-test-renderer": "^16.5.1",
     "rimraf": "^2.6.2"
   }
 }

@@ -1,6 +1,6 @@
 // @flow strict
 
-const theme = {
+const theme: Theme = {
   colors: {
     black: '#010101',
     orange: '#FFA500',
