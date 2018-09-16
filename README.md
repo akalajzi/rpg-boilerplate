@@ -2,13 +2,11 @@ Work in progress...
 
 # RPG (React Parcel GraphQL) boilerplate
 
+[![GitHub issues](https://img.shields.io/github/issues/akalajzi/rpg-boilerplate.svg)](https://github.com/akalajzi/rpg-boilerplate/issues) [![licence](https://img.shields.io/badge/licence-just%20take%20it-ff69b4.svg)](https://img.shields.io/badge/licence-just%20take%20it-ff69b4.svg)
 
-
-[![GitHub issues](https://img.shields.io/github/issues/akalajzi/rpg-boilerplate.svg)](https://github.com/akalajzi/rpg-boilerplate/issues)  [![licence](https://img.shields.io/badge/licence-just%20take%20it-ff69b4.svg)](https://img.shields.io/badge/licence-just%20take%20it-ff69b4.svg)
-
-
-Clean, simple and somewhat opinionated [React v16](https://facebook.github.io/react/) boilerplate. No server included.  
-Typed with [Flow](https://flow.org/en/), built with [Parcel](https://parceljs.org/) with very little configuration. [Styled Components](https://www.styled-components.com/) are included for styling, but project supports `scss` to easily include third party designs.
+Clean, simple and somewhat opinionated [React v16](https://facebook.github.io/react/) boilerplate.  
+Easy **code splitting** with [react-imported-component](https://www.npmjs.com/package/react-imported-component) on a component level. No server included.  
+**Typed** with [Flow](https://flow.org/en/), built with [Parcel](https://parceljs.org/) with very little configuration. [Styled Components](https://www.styled-components.com/) are included for styling, but project supports `scss` to easily include third party designs.
 
 ## Tech
 
@@ -20,6 +18,7 @@ Typed with [Flow](https://flow.org/en/), built with [Parcel](https://parceljs.or
 
 - [React v16](https://facebook.github.io/react/)
 - [React Router 4](https://github.com/ReactTraining/react-router/tree/v4)
+- [react-imported-component](https://www.npmjs.com/package/react-imported-component)
 - [react-helmet](https://github.com/nfl/react-helmet) // TODO
 
 - [Apollo Client 2.0](http://dev.apollodata.com/react/) // TODO
@@ -76,12 +75,10 @@ Starts the development version with hot reloading
 #### Validate code
 
 ```
-yarn check-ci
+yarn check-all
 ```
 
 runs flow check, linter and unit tests, basically running each of the separate commands:  
 `yarn flow:check`  
 `yarn lint`  
 `yarn test`
-
-... TODO: finish README

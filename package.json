@@ -7,19 +7,22 @@
   "author": "Ante Kalajzic <akalajzi@gmail.com",
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel entry/index.html --out-dir dist/bundles",
-    "build": "parcel build entry/index.html -d dist",
+    "build": "parcel build entry/index.html -d dist --detailed-report",
+    "build-imported": "imported-components src etc/imported-chunk.js",
+    "build:treeshake": "yarn build --experimental-scope-hoisting",
     "clean": "rimraf dist",
     "clean-production": "yarn run clean && yarn run production",
     "production": "cross-env NODE_ENV=production && yarn build",
     "flow:check": "flow check",
     "lint": "eslint .",
-    "test-ci": "yarn flow:check && yarn lint && yarn test --coverage",
-    "test": "jest"
+    "test": "jest",
+    "check-all": "yarn flow:check && yarn lint && yarn test --coverage"
   },
   "dependencies": {
     "node-sass": "^4.9.3",
     "react": ">= 16.0.0 < 17.0.0-0",
     "react-dom": "^16.5.1",
+    "react-imported-component": "^4.6.2",
     "react-router-dom": "^4.3.1",
     "styled-components": "^3.4.6"
   },

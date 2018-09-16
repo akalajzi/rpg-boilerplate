@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 
-import { UnknownErrorPage } from 'scenes/ErrorPages';
+import { UnknownErrorPage } from 'scenes';
 import { type RenderErrorInfo } from './types';
 
 /**
