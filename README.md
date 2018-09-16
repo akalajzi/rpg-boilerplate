@@ -2,6 +2,11 @@ Work in progress...
 
 # RPG (React Parcel GraphQL) boilerplate
 
+
+
+[![GitHub issues](https://img.shields.io/github/issues/akalajzi/rpg-boilerplate.svg)](https://github.com/akalajzi/rpg-boilerplate/issues)  [![licence](https://img.shields.io/badge/licence-just%20take%20it-ff69b4.svg)](https://img.shields.io/badge/licence-just%20take%20it-ff69b4.svg)
+
+
 Clean, simple and somewhat opinionated [React v16](https://facebook.github.io/react/) boilerplate. No server included.  
 Typed with [Flow](https://flow.org/en/), built with [Parcel](https://parceljs.org/) with very little configuration. [Styled Components](https://www.styled-components.com/) are included for styling, but project supports `scss` to easily include third party designs.
 
