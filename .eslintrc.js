@@ -59,7 +59,6 @@ module.exports = {
       'error',
       {
         devDependencies: [
-          'kit/**',
           'stories/**',
           '**/__mocks__/*.js',
           '**/__tests__/*.spec.js',
@@ -68,7 +67,6 @@ module.exports = {
       },
     ],
     'compat/compat': 2,
-    // JSX-a11y
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
@@ -84,8 +82,5 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     },
-  },
-  globals: {
-    SERVER: false,
   },
 };

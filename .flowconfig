@@ -34,6 +34,7 @@ module.name_mapper.extension='scss' -> 'empty/object'
 
 module.name_mapper='^components\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
 module.name_mapper='^scenes\(.*\)$' -> '<PROJECT_ROOT>/src/scenes/\1'
+module.name_mapper='^static\(.*\)$' -> '<PROJECT_ROOT>/src/static/\1'
 module.name_mapper='^themes\(.*\)$' -> '<PROJECT_ROOT>/src/themes/\1'
 
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe

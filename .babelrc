@@ -2,16 +2,23 @@
   "presets": [
     "react",
     "flow",
-    ["env", {
-      "targets": {
-        "node": true
+    [
+      "env",
+      {
+        "targets": {
+          "node": true
+        }
       }
-    }],
+    ]
   ],
   "plugins": [
-    ["babel-plugin-styled-components", {"ssr": true}],
-    ["module-resolver", {
-      "root": ["./src"]
-    }]
+    "transform-class-properties",
+    ["styled-components", { "ssr": true }],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"]
+      }
+    ]
   ]
 }
