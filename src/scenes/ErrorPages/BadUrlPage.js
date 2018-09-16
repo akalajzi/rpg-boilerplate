@@ -1,6 +1,7 @@
 // @flow strict
 import React from 'react';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
 
 import defaultTheme from 'themes/default';
 
@@ -28,9 +29,14 @@ const GiantText = styled.div`
 `;
 
 const BadUrlPage = () => (
-  <FullPageContainer>
-    <GiantText>404</GiantText>
-  </FullPageContainer>
+  <React.Fragment>
+    <Helmet>
+      <title>RPG-404</title>
+    </Helmet>
+    <FullPageContainer>
+      <GiantText>404</GiantText>
+    </FullPageContainer>
+  </React.Fragment>
 );
 
 export default BadUrlPage;

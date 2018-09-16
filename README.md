@@ -19,7 +19,7 @@ Easy **code splitting** with [react-imported-component](https://www.npmjs.com/pa
 - [React v16](https://facebook.github.io/react/)
 - [React Router 4](https://github.com/ReactTraining/react-router/tree/v4)
 - [react-imported-component](https://www.npmjs.com/package/react-imported-component)
-- [react-helmet](https://github.com/nfl/react-helmet) // TODO
+- [react-helmet](https://github.com/nfl/react-helmet)
 
 - [Apollo Client 2.0](http://dev.apollodata.com/react/) // TODO
 
