@@ -1,11 +1,11 @@
 // @flow strict
 
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import App from "../App"
+import App from '../App';
 
-const element = document.getElementById('main')
+const element = document.getElementById('main');
 if (!element) {
   throw new Error("Main element is missing!"); //eslint-disable-line
 }

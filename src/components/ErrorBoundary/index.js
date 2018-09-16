@@ -1,8 +1,8 @@
 // @flow strict
-import React from "react";
+import React from 'react';
 
-import { type RenderErrorInfo } from "./types"
-import { UnknownErrorPage } from "scenes/ErrorPages";
+import { UnknownErrorPage } from 'scenes/ErrorPages';
+import { type RenderErrorInfo } from './types';
 
 /**
  * Takes care of unhandled exceptions.
@@ -22,22 +22,21 @@ class ErrorBoundary extends React.Component<Props, State> {
 
     this.state = {
       error: null,
-    }
+    };
   }
+
+  // eventually log somewhere permanently
+  logError = (error: Error, errorInfo: RenderErrorInfo) => {
+    // eslint-disable-next-line
+    console.error(error);
+    // eslint-disable-next-line
+    console.error(errorInfo.componentStack);
+  };
 
   componentDidCatch(error: Error, errorInfo: RenderErrorInfo) {
     this.setState({ error });
     this.logError(error, errorInfo);
   }
-
-  // eventually log somewhere permanently
-  logError(error: Error, errorInfo: RenderErrorInfo) {
-    // eslint-disable-next-line
-    console.error(error);
-    // eslint-disable-next-line
-    console.error(errorInfo.componentStack);
-  }
-
 
   render() {
     const { error } = this.state;

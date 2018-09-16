@@ -5,9 +5,9 @@ export type Theme = {
     black: string,
     orange: string,
     white: string,
-  }
-}
+  },
+};
 
 export type ThemeProps = {
   theme: Theme,
-}
+};

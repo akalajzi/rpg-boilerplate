@@ -2,8 +2,6 @@ const path = require('path');
 const baseRules = require('eslint-config-airbnb-base/rules/style');
 const [_, ...restricted] = baseRules.rules['no-restricted-syntax'];
 
-const PATHS = require('./config/paths');
-
 module.exports = {
   extends: [
     'airbnb',
@@ -41,17 +39,6 @@ module.exports = {
     'react/forbid-prop-types': [1, { forbid: ['any'] }],
     'react/prefer-stateless-function': [2, { ignorePureComponents: true }],
     'react/no-multi-comp': 0,
-    'react/prop-types': [
-      1,
-      {
-        ignore: [
-          // `dispatch` is typically used by Redux `@connect`
-          'dispatch',
-          // `data` is injected by Apollo
-          'data',
-        ],
-      },
-    ],
     'prettier/prettier': [
       'error',
       {
@@ -93,7 +80,8 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        paths: [PATHS.src, PATHS.root, 'node_modules'],
+        paths: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules')],
+        extensions: ['.js', '.jsx'],
       },
     },
   },

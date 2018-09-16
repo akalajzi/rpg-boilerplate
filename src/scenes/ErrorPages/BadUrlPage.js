@@ -1,8 +1,8 @@
 // @flow strict
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
-import defaultTheme from "themes/default"
+import defaultTheme from 'themes/default';
 
 const FullPageContainer = styled.div`
   position: fixed;
@@ -13,13 +13,13 @@ const FullPageContainer = styled.div`
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: ${({theme}: ThemeProps) => theme.colors.black};
-  color: ${({theme}: ThemeProps) => theme.colors.white};
+  background-color: ${({ theme }: ThemeProps) => theme.colors.black};
+  color: ${({ theme }: ThemeProps) => theme.colors.white};
 `;
 
 FullPageContainer.defaultProps = {
   theme: defaultTheme,
-}
+};
 
 const GiantText = styled.div`
   align-items: center;
@@ -31,6 +31,6 @@ const BadUrlPage = () => (
   <FullPageContainer>
     <GiantText>404</GiantText>
   </FullPageContainer>
-)
+);
 
 export default BadUrlPage;

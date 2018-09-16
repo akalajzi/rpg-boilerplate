@@ -7,12 +7,10 @@ import Routes from 'scenes/Routes';
 
 import './global.styles.scss';
 
-const App = () => {
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      <Routes />
-    </ThemeProvider>
-  );
-};
+const App = () => (
+  <ThemeProvider theme={defaultTheme}>
+    <Routes />
+  </ThemeProvider>
+);
 
 export default App;
