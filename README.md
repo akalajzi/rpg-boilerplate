@@ -3,7 +3,7 @@ Work in progress...
 # RPG (React Parcel GraphQL) boilerplate
 
 Clean, simple and somewhat opinionated [React v16](https://facebook.github.io/react/) boilerplate. No server included.  
-Typed with [Flow](https://flow.org/en/), packaged with [Parcel](https://parceljs.org/) with very little configuration. [Styled Components](https://www.styled-components.com/) are included for styling, but project supports `scss` to easily include third party designs.
+Typed with [Flow](https://flow.org/en/), built with [Parcel](https://parceljs.org/) with very little configuration. [Styled Components](https://www.styled-components.com/) are included for styling, but project supports `scss` to easily include third party designs.
 
 ## Tech
 
@@ -55,7 +55,7 @@ yarn global add parcel-bundler
 First, clone the repo and install dependencies
 
 ```
-git clone ...
+git clone git@github.com:akalajzi/rpg-boilerplate.git
 cd rpg-boilerplate
 yarn
 ```
