@@ -2,6 +2,7 @@
 dist
 flow-typed
 node-modules
+coverage
 
 [*]
 indent_style = space

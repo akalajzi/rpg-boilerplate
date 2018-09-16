@@ -6,8 +6,8 @@
   "license": "MIT",
   "author": "Ante Kalajzic <akalajzi@gmail.com",
   "scripts": {
-    "start": "cross-env NODE_ENV=development parcel src/entry/index.html --out-dir dist/bundles",
-    "build": "parcel build src/entry/index.html -d dist",
+    "start": "cross-env NODE_ENV=development parcel entry/index.html --out-dir dist/bundles",
+    "build": "parcel build entry/index.html -d dist",
     "clean": "rimraf dist",
     "clean-production": "yarn run clean && yarn run production",
     "production": "cross-env NODE_ENV=production && yarn build",

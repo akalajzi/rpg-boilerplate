@@ -3,11 +3,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from '../App';
+import App from '../src/App';
 
 const element = document.getElementById('main');
 if (!element) {
-  throw new Error("Main element is missing!"); //eslint-disable-line
+  throw new Error('Main element is missing!'); //eslint-disable-line
 }
 
 // Render

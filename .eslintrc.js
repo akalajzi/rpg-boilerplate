@@ -58,12 +58,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: [
-          'stories/**',
-          '**/__mocks__/*.js',
-          '**/__tests__/*.spec.js',
-          '**/__tests__/*.test.js',
-        ],
+        devDependencies: ['**/__mocks__/*.js', '**/*.spec.js'],
       },
     ],
     'compat/compat': 2,
