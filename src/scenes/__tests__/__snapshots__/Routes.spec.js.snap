@@ -19,6 +19,10 @@ exports[`#Routes should render correctly 1`] = `
       />
       <Route
         component={[Function]}
+        path="/graphql"
+      />
+      <Route
+        component={[Function]}
       />
     </Switch>
   </ErrorBoundary>

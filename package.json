@@ -14,13 +14,18 @@
     "clean-production": "yarn run clean && yarn run production",
     "production": "cross-env NODE_ENV=production && yarn build",
     "flow:check": "flow check",
+    "apollo-generate": "apollo codegen:generate src --target=flow --queries=**/*.query.js",
     "lint": "eslint .",
     "test": "jest",
     "check-all": "yarn flow:check && yarn lint && yarn test --coverage"
   },
   "dependencies": {
+    "apollo-boost": "0.1.14",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.9.2",
     "node-sass": "^4.9.3",
     "react": ">= 16.0.0 < 17.0.0-0",
+    "react-apollo": "^2.1.11",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "react-imported-component": "^4.6.2",

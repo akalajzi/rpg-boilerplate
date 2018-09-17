@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import ErrorBoundary from 'components/ErrorBoundary';
-import { HomePage, BadUrlPage } from './index';
+import { HomePage, GraphqlPage, BadUrlPage } from './index';
 
 const Routes = () => (
   <BrowserRouter>
@@ -14,6 +14,7 @@ const Routes = () => (
       </Helmet>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route path="/graphql" component={GraphqlPage} />
         {/* no match */}
         <Route component={BadUrlPage} />
       </Switch>
