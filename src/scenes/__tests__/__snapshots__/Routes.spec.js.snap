@@ -3,6 +3,14 @@
 exports[`#Routes should render correctly 1`] = `
 <BrowserRouter>
   <ErrorBoundary>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <title>
+        RPG
+      </title>
+    </HelmetWrapper>
     <Switch>
       <Route
         component={[Function]}

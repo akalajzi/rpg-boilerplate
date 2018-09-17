@@ -6,7 +6,6 @@ module.exports = {
   coverageReporters: ['text'],
   collectCoverageFrom: ['src/**/*.js'],
   testMatch: ['<rootDir>/**/*.spec.js'],
-  transformIgnorePatterns: ['<rootDir>/node_modules/'],
   coverageThreshold: {
     // uncomment to force 100% coverage
     global: {
@@ -22,4 +21,5 @@ module.exports = {
     '\\.(css|scss|less)$': '<rootDir>/etc/jest.style-mock.js',
     '\\.(png|jpg|gif|ttf|eot|svg)$': '<rootDir>/etc/jest.file-mock.js',
   },
+  transformIgnorePatterns: ['<rootDir>/node_modules/'],
 };

@@ -11,8 +11,15 @@
       }
     ]
   ],
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"]
+    }
+  },
   "plugins": [
+    "syntax-dynamic-import",
     "transform-class-properties",
+    "react-imported-component/babel",
     ["styled-components", { "ssr": true }],
     [
       "module-resolver",
