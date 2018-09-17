@@ -85,3 +85,5 @@ runs flow check, linter and unit tests, basically running each of the separate c
 
 - add/fix gql tests
 - auto generating flow defs for graphql queries on the fly
+- PWA
+- [static files copy](https://github.com/elwin013/parcel-plugin-static-files-copy)
