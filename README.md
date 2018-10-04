@@ -47,7 +47,7 @@ Dependency manager
 https://yarnpkg.com/en/docs/install
 
 Install parcel-bundler
-
+**Made for parcel version 1.9.7! They introduced some breaking changes with 1.10.* **
 ```
 yarn global add parcel-bundler
 ```
