@@ -1,7 +1,7 @@
 {
   "presets": [
-    "react",
-    "flow",
+    "@babel/react",
+    "@babel/flow",
     [
       "env",
       {
@@ -17,7 +17,7 @@
     }
   },
   "plugins": [
-    "syntax-dynamic-import",
+    "babel-plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-class-properties",
     "react-imported-component/babel",
     ["styled-components", { "ssr": true }],
